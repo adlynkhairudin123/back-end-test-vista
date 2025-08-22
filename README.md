@@ -24,6 +24,11 @@ docker compose up --build
 API: http://localhost:3000
 Swagger UI: http://localhost:3000/api-docs
 
+or simply:
+- npm run build → compiles TypeScript → dist/
+- npm start → runs the compiled app (production)
+- npm run dev → runs in dev mode (hot reload)
+
 Migrations: the container runs prisma migrate deploy on start.
 If change the schema during review:
 docker compose exec api npx prisma migrate deploy
